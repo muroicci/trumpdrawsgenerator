@@ -1,0 +1,35 @@
+{
+	"paths":{
+
+		"root": "./deploy",
+		"css": "./deploy/css",
+		"js": "./deploy/js",
+		"images": "./deploy/images",
+
+
+		"main": {
+			"pug": ["./src/pug/index.pug"],
+			"htmldest": "./deploy",
+			"jsfilename": "main.js",
+			"src": "./src/main.js",
+			"dest": "./deploy/js"
+		},
+
+		"styles":{
+			"src": "./src/sass/**/*.sass",
+			"dest": "./deploy/css"
+		},
+
+		"pug":{
+			"src": "./src/pug/**/*.pug",
+			"dest": "./deploy"
+		},
+
+		"cleanfiles": ["./deploy/**/*.map"],
+
+
+		"watchfiles": ["./deploy/**/*.html", "./deploy/**/*.js"]
+
+	}
+
+}

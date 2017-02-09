@@ -1,0 +1,33 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		title Executive Order Generator
+		link(rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous")
+		link(rel="stylesheet" href="css/main.css")
+	body
+
+		div.main-container
+
+			div
+				canvas#main-canvas(width="364" height="316")
+			div
+				label.pure-button(for="file1") Choose Left Image
+				input#file1.pure-button(type="file" name="file1")
+				label.pure-button(for="file2") Choose Right Image
+				input#file2.pure-button(type="file" name="file1")
+			
+
+			div.download-container
+				input#download.pure-button(type="button" name="download" value="Download GIF")
+
+			//- img#test1(src="images/test1.jpg")
+			//- img#test2(src="images/test2.jpg")
+
+		footer Inspired by <a href="https://twitter.com/TrumpDraws">@TrumpDraws</a>
+			
+
+		script(src="js/gif.js")
+		script(src="js/main.js")
